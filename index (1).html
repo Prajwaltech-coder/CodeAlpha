@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Frame &amp; Co. — Photo Gallery</title>
+
+  <!-- Fonts: Fraunces (display), Inter (body), JetBrains Mono (labels/utility) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===== Hero ===== -->
+  <header class="hero">
+    <p class="eyebrow">FRAME&nbsp;&amp;&nbsp;CO. — ISSUE NO. 12</p>
+    <h1 class="hero-title">Selected&nbsp;Frames</h1>
+    <p class="hero-sub">A small contact sheet of light, place and motion. Twelve frames, four rolls of film.</p>
+  </header>
+
+  <!-- ===== Filter bar ===== -->
+  <nav class="filter-bar" aria-label="Filter gallery by category">
+    <button class="filter-pill is-active" data-filter="all">All Frames</button>
+    <button class="filter-pill" data-filter="nature">Nature</button>
+    <button class="filter-pill" data-filter="urban">Urban</button>
+    <button class="filter-pill" data-filter="wildlife">Wildlife</button>
+    <button class="filter-pill" data-filter="travel">Travel</button>
+  </nav>
+
+  <!-- ===== Gallery grid ===== -->
+  <main class="gallery" id="gallery">
+
+    <figure class="frame" data-category="nature" data-index="0">
+      <span class="frame-no">No. 01</span>
+      <img src="https://picsum.photos/seed/misty-forest/800/600" alt="Misty pine forest at dawn" loading="lazy" />
+      <figcaption class="frame-caption">
+        <span class="frame-title">Misty Pines</span>
+        <span class="frame-tag">Nature</span>
+      </figcaption>
+    </figure>
+
+    <figure class="frame" data-category="urban" data-index="1">
+      <span class="frame-no">No. 02</span>
+      <img src="https://picsum.photos/seed/skyline-dusk/800/600" alt="City skyline at dusk" loading="lazy" />
+      <figcaption class="frame-caption">
+        <span class="frame-title">Skyline Dusk</span>
+        <span class="frame-tag">Urban</span>
+      </figcaption>
+    </figure>
+
+    <figure class="frame" data-category="wildlife" data-index="2">
+      <span class="frame-no">No. 03</span>
+      <img src="https://picsum.photos/seed/arctic-fox/800/600" alt="Arctic fox in snow" loading="lazy" />
+      <figcaption class="frame-caption">
+        <span class="frame-title">Arctic Fox</span>
+        <span class="frame-tag">Wildlife</span>
+      </figcaption>
+    </figure>
+
+    <figure class="frame" data-category="travel" data-index="3">
+      <span class="frame-no">No. 04</span>
+      <img src="https://picsum.photos/seed/desert-road/800/600" alt="Empty road through desert" loading="lazy" />
+      <figcaption class="frame-caption">
+        <span class="frame-title">Desert Road</span>
+        <span class="frame-tag">Travel</span>
+      </figcaption>
+    </figure>
+
+    <figure class="frame" data-category="nature" data-index="4">
+      <span class="frame-no">No. 05</span>
+      <img src="https://picsum.photos/seed/alpine-lake/800/600" alt="Still alpine lake and mountains" loading="lazy" />
+      <figcaption class="frame-caption">
+        <span class="frame-title">Alpine Still</span>
+        <span class="frame-tag">Nature</span>
+      </figcaption>
+    </figure>
+
+    <figure class="frame" data-category="urban" data-index="5">
+      <span class="frame-no">No. 06</span>
+      <img src="https://picsum.photos/seed/old-quarter/800/600" alt="Narrow street in old town quarter" loading="lazy" />
+      <figcaption class="frame-caption">
+        <span class="frame-title">Old Quarter</span>
+        <span class="frame-tag">Urban</span>
+      </figcaption>
+    </figure>
+
+    <figure class="frame" data-category="wildlife" data-index="6">
+      <span class="frame-no">No. 07</span>
+      <img src="https://picsum.photos/seed/heron-flight/800/600" alt="Heron in flight over water" loading="lazy" />
+      <figcaption class="frame-caption">
+        <span class="frame-title">Heron in Flight</span>
+        <span class="frame-tag">Wildlife</span>
+      </figcaption>
+    </figure>
+
+    <figure class="frame" data-category="travel" data-index="7">
+      <span class="frame-no">No. 08</span>
+      <img src="https://picsum.photos/seed/market-day/800/600" alt="Busy outdoor market street" loading="lazy" />
+      <figcaption class="frame-caption">
+        <span class="frame-title">Market Day</span>
+        <span class="frame-tag">Travel</span>
+      </figcaption>
+    </figure>
+
+    <figure class="frame" data-category="nature" data-index="8">
+      <span class="frame-no">No. 09</span>
+      <img src="https://picsum.photos/seed/canyon-light/800/600" alt="Sunlight through canyon walls" loading="lazy" />
+      <figcaption class="frame-caption">
+        <span class="frame-title">Canyon Light</span>
+        <span class="frame-tag">Nature</span>
+      </figcaption>
+    </figure>
+
+    <figure class="frame" data-category="urban" data-index="9">
+      <span class="frame-no">No. 10</span>
+      <img src="https://picsum.photos/seed/neon-alley/800/600" alt="Neon lit alley at night" loading="lazy" />
+      <figcaption class="frame-caption">
+        <span class="frame-title">Neon Alley</span>
+        <span class="frame-tag">Urban</span>
+      </figcaption>
+    </figure>
+
+    <figure class="frame" data-category="wildlife" data-index="10">
+      <span class="frame-no">No. 11</span>
+      <img src="https://picsum.photos/seed/lion-rest/800/600" alt="Lion resting in golden grass" loading="lazy" />
+      <figcaption class="frame-caption">
+        <span class="frame-title">Golden Rest</span>
+        <span class="frame-tag">Wildlife</span>
+      </figcaption>
+    </figure>
+
+    <figure class="frame" data-category="travel" data-index="11">
+      <span class="frame-no">No. 12</span>
+      <img src="https://picsum.photos/seed/coastal-cliff/800/600" alt="Cliffs along a coastline" loading="lazy" />
+      <figcaption class="frame-caption">
+        <span class="frame-title">Coastal Cliff</span>
+        <span class="frame-tag">Travel</span>
+      </figcaption>
+    </figure>
+
+  </main>
+
+  <p class="empty-state" id="emptyState" hidden>No frames in this roll yet.</p>
+
+  <!-- ===== Lightbox ===== -->
+  <div class="lightbox" id="lightbox" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Image viewer">
+    <button class="lb-close" id="lbClose" aria-label="Close viewer">&times;</button>
+
+    <button class="lb-arrow lb-prev" id="lbPrev" aria-label="Previous image">&#8249;</button>
+
+    <div class="lb-stage">
+      <img class="lb-image" id="lbImage" src="" alt="" />
+      <div class="lb-meta">
+        <span class="lb-counter" id="lbCounter">01 / 12</span>
+        <span class="lb-divider">—</span>
+        <span class="lb-title" id="lbTitle">Title</span>
+        <span class="lb-tag" id="lbTag">Category</span>
+      </div>
+    </div>
+
+    <button class="lb-arrow lb-next" id="lbNext" aria-label="Next image">&#8250;</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
